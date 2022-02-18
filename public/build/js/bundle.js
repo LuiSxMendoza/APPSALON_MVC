@@ -122,7 +122,7 @@ function pagSiguiente() {
 async function consultarApi() {
 
     try {
-        const url = `${server}/api/servicios`;
+        const url = 'https://immense-ocean-13757.herokuapp.com/api/servicios';
         const resultado = await fetch(url);
         const servicios = await resultado.json();
         mostrarServicios(servicios);
