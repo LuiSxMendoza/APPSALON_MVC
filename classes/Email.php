@@ -41,7 +41,7 @@ class Email {
         Has creado tu cuenta en App Salon, solo debes confirmarla haciendo
         clic en el siguiente enlace</p>";
         $contenido .= "<p>Presiona aquí: 
-        <a href='http://localhost:3000/confirma-cuenta?token="
+        <a href='/confirma-cuenta?token="
         . $this->token . "'>Confirmar Cuenta</a> </p>";
         $contenido .= "<p>Si tu no solicitaste esta cuenta puedes
         ignorar este mensaje</p>";
@@ -82,7 +82,7 @@ class Email {
         Si tu solicitaste cambiar tu contraseña puedes hacerlo haciendo
         clic en el siguiente enlace</p>";
         $contenido .= "<p>Presiona aquí: 
-        <a href='http://localhost:3000/recuperar?token="
+        <a href='/recuperar?token="
         . $this->token . "'>Cambiar contraseña</a> </p>";
         $contenido .= "<p>Si tu no solicitaste esta cambio puedes
         ignorar este mensaje</p>";
