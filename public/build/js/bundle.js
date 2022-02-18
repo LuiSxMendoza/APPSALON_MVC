@@ -340,7 +340,7 @@ async function reservarCita() {
 
     try {
         //? Peticion a la api
-        const url = 'http://localhost:3000/api/citas';
+        const url = 'https://immense-ocean-13757.herokuapp.com/api/citas';
 
         const respuesta = await fetch(url, {
             method: 'POST',
