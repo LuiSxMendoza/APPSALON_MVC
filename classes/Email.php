@@ -21,15 +21,15 @@ class Email {
         //? Crear objeto Email
         $mail = new PHPMailer(TRUE);
         $mail->isSMTP();
-        $mail->Host = 'smtp.gmail.com';
+        $mail->Host = 'smtp.mailtrap.io';
         $mail->SMTPAuth = TRUE;
-        $mail->Username = 'juanluis123pit@gmail.com';
-        $mail->Password = 'asdfgh1324/@';
-        $mail->Port = 587/465;
+        $mail->Username = '1a6753af42b0c8';
+        $mail->Password = '403df7079bdfca';
+        $mail->Port = 2525;
         
         $mail->setFrom('cuentas@appsalon.com', 'Mailer');
         $mail->addAddress($this->email, 'AppSalon.com');
-        $mail->Subject = 'Confirma tu cuenta';
+        $mail->Subject = 'Cambia tu contraseña';
 
         //? Set HTML
         $mail->isHTML(true);
