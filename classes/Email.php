@@ -69,7 +69,7 @@ class Email {
         $mail->Port = 2525;
         
         $mail->setFrom('cuentas@appsalon.com', 'Mailer');
-        $mail->addAddress('cuentas@appsalon.com', 'AppSalon.com');
+        $mail->addAddress($this->email, 'AppSalon.com');
         $mail->Subject = 'Cambia tu contraseña';
 
         //? Set HTML
