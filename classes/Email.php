@@ -10,8 +10,7 @@ class Email {
     public $nombre;
     public $token;
 
-    public function __construct($email, $nombre, $token)
-    {
+    public function __construct($email, $nombre, $token) {
         $this->email = $email;
         $this->nombre = $nombre;
         $this->token = $token;
@@ -22,14 +21,14 @@ class Email {
         //? Crear objeto Email
         $mail = new PHPMailer(TRUE);
         $mail->isSMTP();
-        $mail->Host = 'smtp.mailtrap.io';
+        $mail->Host = 'smtp.gmail.com';
         $mail->SMTPAuth = TRUE;
-        $mail->Username = '1a6753af42b0c8';
-        $mail->Password = '403df7079bdfca';
-        $mail->Port = 2525;
+        $mail->Username = 'juanluis123pit@gmail.com';
+        $mail->Password = 'asdfgh1324/@';
+        $mail->Port = 587/465;
         
         $mail->setFrom('cuentas@appsalon.com', 'Mailer');
-        $mail->addAddress('cuentas@appsalon.com', 'AppSalon.com');
+        $mail->addAddress($this->email, 'AppSalon.com');
         $mail->Subject = 'Confirma tu cuenta';
 
         //? Set HTML
